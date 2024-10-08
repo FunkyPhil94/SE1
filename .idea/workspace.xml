@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Erste Erstellung einer Factory">
+    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Erste Erstellung einer Factory Ü1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/test/GermanTranslatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/exercises/uebung1/GermanTranslatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +128,7 @@
       <workItem from="1727944514467" duration="251000" />
       <workItem from="1727965126693" duration="3902000" />
       <workItem from="1728373493765" duration="4047000" />
-      <workItem from="1728400718009" duration="1662000" />
+      <workItem from="1728400718009" duration="2547000" />
     </task>
     <task id="LOCAL-00001" summary="Erste Erstellung einer Factory">
       <option name="closed" value="true" />
@@ -147,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728400220017</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Erste Erstellung einer Factory Ü1">
+      <option name="closed" value="true" />
+      <created>1728402499864</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728402499864</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +173,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Erste Erstellung einer Factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Erste Erstellung einer Factory" />
+    <MESSAGE value="Erste Erstellung einer Factory Ü1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Erste Erstellung einer Factory Ü1" />
   </component>
 </project>
