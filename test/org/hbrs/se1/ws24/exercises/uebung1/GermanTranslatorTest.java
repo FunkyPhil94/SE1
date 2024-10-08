@@ -1,4 +1,4 @@
-package org.hbrs.se1.ws24.test;
+package org.hbrs.se1.ws24.exercises.uebung1;
 
 import org.hbrs.se1.ws24.exercises.uebung1.control.Factory;
 import org.hbrs.se1.ws24.exercises.uebung1.control.Translator;
