@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Erste Erstellung einer Factory Ü1">
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ConcreteMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ContainerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/exercises/uebung2/ContainerTest.java" afterDir="false" />
+    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Übung 2 + Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/exercises/uebung2/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/exercises/uebung2/ContainerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <recent name="org.hbrs.se1.ws24.exercises.uebung1.control" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContainerTest.deleteMemberTest">
+  <component name="RunManager" selected="JUnit.ContainerTest">
     <configuration name="ContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
@@ -139,6 +136,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContainerTest.testDeleteMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung2" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung2.ContainerTest" />
+      <option name="METHOD_NAME" value="testDeleteMember" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GermanTranslatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
@@ -165,8 +178,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContainerTest.deleteMemberTest" />
         <item itemvalue="JUnit.ContainerTest" />
+        <item itemvalue="JUnit.ContainerTest.testDeleteMember" />
+        <item itemvalue="JUnit.ContainerTest.deleteMemberTest" />
         <item itemvalue="JUnit.ContainerTest.addMemberTest" />
         <item itemvalue="JUnit.GermanTranslatorTest" />
       </list>
@@ -185,7 +199,7 @@
       <workItem from="1727965126693" duration="3902000" />
       <workItem from="1728373493765" duration="4047000" />
       <workItem from="1728400718009" duration="2946000" />
-      <workItem from="1728977954453" duration="3170000" />
+      <workItem from="1728977954453" duration="4188000" />
     </task>
     <task id="LOCAL-00001" summary="Erste Erstellung einer Factory">
       <option name="closed" value="true" />
@@ -227,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728403511222</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Übung 2 + Test">
+      <option name="closed" value="true" />
+      <created>1728981211237</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728981211237</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +269,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Erste Erstellung einer Factory" />
     <MESSAGE value="Erste Erstellung einer Factory Ü1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Erste Erstellung einer Factory Ü1" />
+    <MESSAGE value="Übung 2 + Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Übung 2 + Test" />
   </component>
 </project>

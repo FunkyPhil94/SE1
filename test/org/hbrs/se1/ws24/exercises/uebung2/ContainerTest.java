@@ -8,9 +8,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ContainerTest {
 
-    Container container;
-    Member memberNr1;
-    Member memberNr2;
+    private Container container;
+    private Member memberNr1;
+    private Member memberNr2;
 
     @BeforeEach
     void setUp() {
@@ -27,35 +27,41 @@ class ContainerTest {
     }
 
     @Test
-    void addMemberTest() {
+    void testAddMemberAndSize() throws ContainerException {
+        // Größe testen beim hinzufügen von Objekten
+        assertEquals(0, container.size(), "Falsche Größe!");
         container.addMember(memberNr1);
-        assertEquals(1, container.size(), "Größe stimmt nicht");
-
+        assertEquals(1, container.size(), "Falsche Größe!");
         container.addMember(memberNr2);
-        assertEquals(2, container.size(), "Größe Stimmt nicht");
+        assertEquals(2, container.size(), "Falsche Größe!");
 
-        assertThrows(ContainerException.class, () -> container.addMember(memberNr1));
-        assertEquals(2, container.size(), "Größe Stimmt nicht");
+        // Testen, ob ein bereits hinzugefügter Member eine ContainerException auswirft
+        assertThrows(ContainerException.class, () -> container.addMember(memberNr1), "Exception Klasse wird nicht aufgerufen");
+        assertThrows(ContainerException.class, () -> container.addMember(memberNr2), "Exception Klasse wird nicht aufgerufen");
 
     }
 
     @Test
-    void deleteMemberTest() {
+    void testDeleteMember() throws ContainerException {
+        // Testen, ob leere Liste erkannt wird
+        assertEquals(0, container.size(), "Falsche Größe!");
+        assertEquals("Keine Member vorhanden!", container.deleteMember(1), "Keine Fehlermeldung beim löschen in einer leeren Liste");
+
+        // Testen, ob fehlerhaft leere Liste erkannt wird
         container.addMember(memberNr1);
-        container.addMember(memberNr2);
+        assertEquals(1, container.size(), "Falsche Größe!");
+        assertNotEquals("Keine Member vorhanden!", container.deleteMember(1), "Fehlerhafte Ausgabe, dass die Liste leer ist, obwohl Liste nicht leer ist");
+        assertEquals(0, container.size(), "Falsche Größe!");
 
-        container.dump();
+        // Testen, ob nicht vorhandende ID erkannt wird
+        container.addMember(memberNr1);
+        assertEquals(1, container.size(), "Falsche Größe!");
+        assertEquals("Kein Member mit der ID vorhanden!", container.deleteMember(100), "Nicht vorhandende ID wird als vorhanden erkannt");
+        assertEquals(1, container.size(), "Falsche Größe!");
 
-        assertEquals(2, container.size(), "Größe stimmt nicht!");
-
-        container.deleteMember(1);
-        assertEquals(1, container.size(), "Größe stimmt nicht!");
-
-        container.deleteMember(1);
-        assertEquals(1, container.size(), "Größe stimmt nicht!");
-
-        container.deleteMember(2);
-        assertEquals(0, container.size(), "Größte stimmt nicht");
+        // Testen, ob ordungsgemäß gelöscht wird
+        assertEquals("Member mit der ID " + memberNr1.getID() + " wurde entfernt: " + memberNr1.toString(), container.deleteMember(1), "Falsche Ausgabe beim erfolgreichen Löschen eines Members");
+        assertEquals(0, container.size(), "Falsche Größe!");
     }
 
 }
