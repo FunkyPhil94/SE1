@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>970</x>
+      <y>0</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>890</x>
+      <y>80</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Erstellt
+Fachfeinkonzept
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>890</x>
+      <y>280</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Erhält Fachfeinkonzept
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>320</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>890</x>
+      <y>390</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Dokumente aufarbeiten
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>430</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>890</x>
+      <y>500</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Auf Sharepoint ablegen
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>870</x>
+      <y>250</y>
+      <w>220</w>
+      <h>430</h>
+    </coordinates>
+    <panel_attributes>Project Management Office (PMO)
+valign=top
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>870</x>
+      <y>50</y>
+      <w>220</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Interner Software-Architekt
+valign=top
+bg=ORANGE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>890</x>
+      <y>610</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Stakeholder über Review
+benachrichtigen</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>540</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>880</x>
+      <y>800</y>
+      <w>200</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Interner Projektleiter (Kunde)
+valign=bottom</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>1100</x>
+      <y>800</y>
+      <w>200</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Externer Gutachter
+valign=bottom</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>660</x>
+      <y>800</y>
+      <w>200</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Interner IT-Leiter
+valign=bottom</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>930</x>
+      <y>710</y>
+      <w>100</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>{joinSpec=
+date is on or 
+after July 1st
+and the exam 
+is passed}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>670</x>
+      <y>820</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Review
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>860</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>670</x>
+      <y>930</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Anmerkung an PMO
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>710</y>
+      <w>220</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>710</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1000</x>
+      <y>710</y>
+      <w>220</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>200.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1110</x>
+      <y>820</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Review
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1190</x>
+      <y>860</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1110</x>
+      <y>930</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Anmerkung an PMO
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>890</x>
+      <y>820</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Review
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>860</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>890</x>
+      <y>930</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Anmerkung an PMO
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>930</x>
+      <y>1080</y>
+      <w>100</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>{joinSpec=
+date is on or 
+after July 1st
+and the exam 
+is passed}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>970</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1000</x>
+      <y>970</y>
+      <w>220</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>970</y>
+      <w>220</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>200.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>650</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>870</x>
+      <y>1120</y>
+      <w>220</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Project Management Office (PMO)
+valign=top
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>1080</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>890</x>
+      <y>1150</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Gesamtbewertung
+ausführen
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>960</x>
+      <y>1260</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>bg=green
+type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>1190</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>10</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>850</x>
+      <y>1260</y>
+      <w>130</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+[Fehler]</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>540</x>
+      <y>1260</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>bg=green
+type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>680</x>
+      <y>1260</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Überarbeitung des
+Fachfeinkonzepts
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>670</x>
+      <y>1230</y>
+      <w>200</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Interner Software-Architekt
+valign=top
+bg=ORANGE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>1260</y>
+      <w>130</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>200</y>
+      <w>580</w>
+      <h>1100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+[Kritischer Fehler]</panel_attributes>
+    <additional_attributes>560.0;10.0;20.0;10.0;10.0;1080.0;140.0;1080.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>960</x>
+      <y>190</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>bg=green
+type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>220</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>120</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>740</x>
+      <y>1370</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>bg=green
+type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>1290</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>190.0;100.0;10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>770</x>
+      <y>1290</y>
+      <w>230</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;100.0;210.0;100.0;210.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>670</x>
+      <y>1470</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Abnahme ohne Vorbehalt
+offener Punkte
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>1400</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>670</x>
+      <y>1580</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Ausgabe
+Letter of Acceptance
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>1510</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>650</x>
+      <y>1440</y>
+      <w>220</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Project Management Office (PMO)
+valign=top
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>660</x>
+      <y>1770</y>
+      <w>200</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Interner Projektleiter (Kunde)
+valign=bottom</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>440</x>
+      <y>1770</y>
+      <w>200</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Interner IT-Leiter
+valign=bottom</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>710</x>
+      <y>1680</y>
+      <w>100</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>{joinSpec=
+date is on or 
+after July 1st
+and the exam 
+is passed}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>450</x>
+      <y>1790</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Unterschreibt
+Abnahmeprotokoll
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>1680</y>
+      <w>220</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>1680</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>1680</y>
+      <w>220</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>200.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>890</x>
+      <y>1790</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Unterschreibt
+Abnahmeprotokoll
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>670</x>
+      <y>1790</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Unterschreibt
+Abnahmeprotokoll
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>710</x>
+      <y>1940</y>
+      <w>100</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>{joinSpec=
+date is on or 
+after July 1st
+and the exam 
+is passed}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>1830</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>1830</y>
+      <w>220</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>1830</y>
+      <w>220</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>200.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>1620</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>880</x>
+      <y>1770</y>
+      <w>200</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Externer Gutachter
+valign=bottom</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>650</x>
+      <y>1980</y>
+      <w>220</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Project Management Office (PMO)
+valign=top
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>670</x>
+      <y>2010</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Impementierung einleiten
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>1940</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>2050</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>750</x>
+      <y>2120</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
