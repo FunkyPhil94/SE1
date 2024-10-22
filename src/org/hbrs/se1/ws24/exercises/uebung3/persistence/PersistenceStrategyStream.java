@@ -1,6 +1,7 @@
 package org.hbrs.se1.ws24.exercises.uebung3.persistence;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+
+import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
@@ -22,7 +23,13 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      * (Last Access: Oct, 15th 2024)
      */
     public void save(List<E> member) throws PersistenceException  {
+        try {
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(location));
+            oos.writeObject(member);
 
+        } catch (IOException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable,"Daten können nicht in gespeichert werden");
+        }
     }
 
     @Override
@@ -31,7 +38,7 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      * Some coding examples come for free :-)
      * Take also a look at the import statements above ;-!
      */
-    public List<E> load() throws PersistenceException  {
+    public List<E> load() throws PersistenceException, IOException {
         // Some Coding hints ;-)
 
         // ObjectInputStream ois = null;
@@ -52,6 +59,18 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
         // return newListe
 
         // and finally close the streams
-        return null;
+        List<E> memberList = new ArrayList<>();
+        ObjectInputStream ois = null;
+        try {
+            ois = new ObjectInputStream(new FileInputStream(location));
+            memberList = (List<E>) ois.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Daten können nicht von geladen werden");
+        } finally {
+            if (ois != null) {
+                ois.close();
+            }
+        }
+        return memberList;
     }
 }

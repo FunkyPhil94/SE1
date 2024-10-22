@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Übung 2 + Test">
+    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Übung 2 + Test + Änderungen">
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/MemberView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/exercises/uebung3/ContainerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/exercises/uebung2/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/exercises/uebung2/ContainerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceStrategyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceStrategyStream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,6 +85,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.hbrs.se1.ws24.exercises.uebung3" />
       <recent name="org.hbrs.se1.ws24.exercises.uebung1" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -87,83 +94,83 @@
       <recent name="org.hbrs.se1.ws24.exercises.uebung1.control" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContainerTest">
-    <configuration name="ContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ContainerTest.roundTripTest">
+    <configuration name="ContainerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung2.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung2" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung2.ContainerTest" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung3" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.ContainerTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerTest.addMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainerTest.roundTripTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung2.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung2" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung2.ContainerTest" />
-      <option name="METHOD_NAME" value="addMemberTest" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung3" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.ContainerTest" />
+      <option name="METHOD_NAME" value="roundTripTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerTest.deleteMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainerTest.testNullPersistence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung2.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung2" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung2.ContainerTest" />
-      <option name="METHOD_NAME" value="deleteMemberTest" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung3" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.ContainerTest" />
+      <option name="METHOD_NAME" value="testNullPersistence" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerTest.testDeleteMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainerTest.usingMongoDBPersistenceStrategy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung2.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung2" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung2.ContainerTest" />
-      <option name="METHOD_NAME" value="testDeleteMember" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung3" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.ContainerTest" />
+      <option name="METHOD_NAME" value="usingMongoDBPersistenceStrategy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GermanTranslatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainerTest.wrongDirectory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung1.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung1" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung1.GermanTranslatorTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung3" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.ContainerTest" />
+      <option name="METHOD_NAME" value="wrongDirectory" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContainerTest" />
-        <item itemvalue="JUnit.ContainerTest.testDeleteMember" />
-        <item itemvalue="JUnit.ContainerTest.deleteMemberTest" />
-        <item itemvalue="JUnit.ContainerTest.addMemberTest" />
-        <item itemvalue="JUnit.GermanTranslatorTest" />
+        <item itemvalue="JUnit.ContainerTest.roundTripTest" />
+        <item itemvalue="JUnit.ContainerTest.wrongDirectory" />
+        <item itemvalue="JUnit.ContainerTest.usingMongoDBPersistenceStrategy" />
+        <item itemvalue="JUnit.ContainerTest.testNullPersistence" />
+        <item itemvalue="JUnit.ContainerTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +206,8 @@
       <workItem from="1727965126693" duration="3902000" />
       <workItem from="1728373493765" duration="4047000" />
       <workItem from="1728400718009" duration="2946000" />
-      <workItem from="1728977954453" duration="4188000" />
+      <workItem from="1728977954453" duration="4498000" />
+      <workItem from="1729625176415" duration="2088000" />
     </task>
     <task id="LOCAL-00001" summary="Erste Erstellung einer Factory">
       <option name="closed" value="true" />
@@ -249,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728981211237</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Übung 2 + Test + Änderungen">
+      <option name="closed" value="true" />
+      <created>1729025056857</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729025056857</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +286,18 @@
     <MESSAGE value="Erste Erstellung einer Factory" />
     <MESSAGE value="Erste Erstellung einer Factory Ü1" />
     <MESSAGE value="Übung 2 + Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Übung 2 + Test" />
+    <MESSAGE value="Übung 2 + Test + Änderungen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Übung 2 + Test + Änderungen" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/org/hbrs/se1/ws24/exercises/uebung3/ContainerTest.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
