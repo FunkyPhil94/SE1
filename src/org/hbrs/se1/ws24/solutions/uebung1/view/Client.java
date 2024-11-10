@@ -1,6 +1,5 @@
 package org.hbrs.se1.ws24.solutions.uebung1.view;
 
-import org.hbrs.se1.ws24.solutions.uebung1.control.GermanTranslator;
 import org.hbrs.se1.ws24.solutions.uebung1.control.Translator;
 import org.hbrs.se1.ws24.solutions.uebung1.control.factory.TranslatorFactory;
 
