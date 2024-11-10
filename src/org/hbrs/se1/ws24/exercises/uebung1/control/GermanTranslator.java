@@ -7,10 +7,22 @@ public class GermanTranslator implements Translator {
 	/**
 	 * Methode zur Übersetzung einer Zahl in eine String-Repraesentation
 	 */
+
+	private String[] zahlen = { "eins", "zwei", "drei", "vier" , "fünf",
+			"sechs" , "sieben" , "acht" , "neun" , "zehn" };
+
 	public String translateNumber( int number ) {
 		// [ihr Source Code aus Übung 1-2]
 
-		return "test12";
+		String result = " ";
+
+		try {
+			result = zahlen[number - 1];
+		} catch (ArrayIndexOutOfBoundsException e) {
+			result = "Übersetzung der Zahl " + number + " nicht möglich (Version: " + version + ")";
+		}
+
+		return result;
 	}
 
 	/**
@@ -24,7 +36,7 @@ public class GermanTranslator implements Translator {
 	 * Setzen des Datums, wann der Uebersetzer erzeugt wurde (Format: Monat/Jahr (Beispiel: "Okt/2024"))
 	 * Das Datum sollte system-intern durch eine Factory-Klasse gesetzt werden und nicht von externen View-Klassen
 	 */
-	public void setDate( String date ) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 
