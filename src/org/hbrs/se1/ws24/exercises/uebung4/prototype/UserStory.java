@@ -1,52 +1,59 @@
 package org.hbrs.se1.ws24.exercises.uebung4.prototype;
-    public class UserStory {
-        // ToDo: Sind die Attribute der Klasse UserStory vollständig? Wie sieht es mit den
-        //  Sichtbarkeiten aus? (F4)
 
-        String titel;
-        int id = 0;
-        double prio = 0.0;
-        String project;
+import java.io.Serializable;
+
+public class UserStory implements Serializable {
+
+        private String project;
+        private String acceptance;
+        private String titel;
+        private Integer id = 0;
+
+        private Integer value;
+        private Integer risk;
+        private Integer effort;
+        private Integer penalty;
 
         public String getProject() {
-            return project;
+            return this.project;
         }
 
         public void setProject(String project) {
             this.project = project;
         }
 
-        public UserStory(int id, String titel, double prio) {
-            this.id = id;
+        public UserStory(String project, String acceptance, String titel, Integer id, Integer value, Integer risk, Integer effort, Integer penalty) {
+            this.project = project;
+            this.acceptance = acceptance;
             this.titel = titel;
-            this.prio = prio;
+            this.id = id;
+            this.value = value;
+            this.risk = risk;
+            this.effort = effort;
+            this.penalty = penalty;
         }
 
         public UserStory() {
         }
 
-        public double getPrio() {
-            return prio;
-        }
-
-        public void setPrio(double prio) {
-            this.prio = prio;
-        }
-
         public String getTitel() {
-            return titel;
+            return this.titel;
         }
 
-        public void setTitel(String titel) {
-            this.titel = titel;
-        }
-
-        public int getId() {
-            return id;
+        public Integer getId() {
+            return this.id;
         }
 
         public void setId(int id) {
             this.id = id;
+        }
+
+        public String getAcceptance() {
+            return this.acceptance;
+        }
+
+        public double getPriority() {
+            return (double) (this.value + this.penalty) / (this.effort + this.risk);
         }
 
     }
