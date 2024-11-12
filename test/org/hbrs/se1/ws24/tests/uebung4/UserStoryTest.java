@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UserStoryTest {
 
+
     UserStory userStory = new UserStory("Test Projekt", "Test Akzeptanz", "Test Titel", 1, 4, 2, 2, 4);
 
 
