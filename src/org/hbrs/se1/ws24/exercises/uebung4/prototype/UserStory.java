@@ -1,5 +1,6 @@
 package org.hbrs.se1.ws24.exercises.uebung4.prototype;
 
+
 import java.io.Serializable;
 
 public class UserStory implements Serializable {
