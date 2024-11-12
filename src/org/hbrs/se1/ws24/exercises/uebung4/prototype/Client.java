@@ -69,27 +69,30 @@ public class Client {
     }
 
     private static void userCommands() {
-        System.out.println("> ");
-        String eingabe = scanner.nextLine();
-        String [] teile = eingabe.split(" ", 3);
-        String befehle = teile[0];
-        try {
-            switch (befehle) {
-                case "enter" -> createUserStory();
-                case "store" -> container.store();
-                case "load" -> container.load();
-                case "dump" -> {
-                    if (teile.length > 2) UserStoryView.dump(container.getItemList(), teile[1], teile[2]);
-                    else UserStoryView.dump(container.getItemList());
-                }
-                case "exit" -> {
-                    System.out.println("Ciao Kakao");
-                }
-                case "help" -> printHelp();
-                default -> System.out.println("Geben Sie 'help' für Hilfe ein");
-                }
-            } catch (Exception e) {
-            System.out.println("Fehler: " + e.getMessage());
+        while(true) {
+            System.out.println("> ");
+            String eingabe = scanner.nextLine();
+            String [] teile = eingabe.split(" ", 3);
+            String befehle = teile[0];
+            try {
+                switch (befehle) {
+                    case "enter" -> createUserStory();
+                    case "store" -> container.store();
+                    case "load" -> container.load();
+                    case "dump" -> {
+                        if (teile.length > 2) UserStoryView.dump(container.getItemList(), teile[1], teile[2]);
+                        else UserStoryView.dump(container.getItemList());
+                    }
+                    case "exit" -> {
+                        System.out.println("Ciao Kakao");
+                        return;
+                    }
+                    case "help" -> printHelp();
+                    default -> System.out.println("Geben Sie 'help' für Hilfe ein");
+                    }
+                } catch (Exception e) {
+                System.out.println("Fehler: " + e.getMessage());
+            }
         }
     }
 
