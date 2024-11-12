@@ -1,14 +1,14 @@
 package org.hbrs.se1.ws24.exercises.uebung4.prototype;
 
-import org.hbrs.se1.ws24.exercises.uebung3.ContainerException;
-import org.hbrs.se1.ws24.exercises.uebung3.persistence.PersistenceStrategyStream;
+import org.hbrs.se1.ws24.solutions.uebung3.ContainerException;
+import org.hbrs.se1.ws24.solutions.uebung3.persistence.PersistenceStrategyStream;
 
 import java.util.Scanner;
 
 public class Client {
 
     private static final Container <UserStory> container = Container.getInstance();
-    private static final PersistenceStrategyStream<UserStory> persistenceStrategy = new PersistenceStrategyStream<>();
+    private static  PersistenceStrategyStream <UserStory> persistenceStrategy;
     private static final Scanner scanner = new Scanner(System.in);
     private static final String FILE_PATH = "src/org/hbrs/se1/ws24/exercises/uebung4/UserStories.ser";
 
@@ -48,6 +48,12 @@ public class Client {
     }
 
     private static void initializePersistence() {
+        persistenceStrategy = new PersistenceStrategyStream<>();
+        if (persistenceStrategy == null) {
+            System.out.println("strategy is null");
+        } else {
+            System.out.println("is not null");
+        }
         persistenceStrategy.setLOCATION(FILE_PATH);
         container.setPersistenceStrategyUserStroies(persistenceStrategy);
         System.out.println("Willkommen zum User Story Management System. Geben Sie 'help' für eine Liste der Befehle ein.");
@@ -55,7 +61,7 @@ public class Client {
 
     private static void createUserStory() throws ContainerException, org.hbrs.se1.ws24.exercises.uebung4.prototype.ContainerException {
         String project = readString("Project");
-        String acceptance = readString("Acceptanzkriterium");
+        String acceptance = readString("Akzeptanzkriterium");
         String titel = readString("Titel");
         Integer id = readInteger("ID");
         Integer value = readKeyFigures("Mehrwert von 1 bis 5 ( 1 = niedrig, 5 = hoch", 1, 5);
@@ -80,8 +86,8 @@ public class Client {
                     case "store" -> container.store();
                     case "load" -> container.load();
                     case "dump" -> {
-                        if (teile.length > 2) UserStoryView.dump(container.getItemList(), teile[1], teile[2]);
-                        else UserStoryView.dump(container.getItemList());
+                        if (teile.length > 2) {UserStoryView.dump(container.getItemList(), teile[1], teile[2]);}
+                        else {UserStoryView.dump(container.getItemList());}
                     }
                     case "exit" -> {
                         System.out.println("Ciao Kakao");

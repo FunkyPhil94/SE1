@@ -1,7 +1,7 @@
 package org.hbrs.se1.ws24.exercises.uebung4.prototype;
 
-import org.hbrs.se1.ws24.exercises.uebung3.persistence.PersistenceException;
-import org.hbrs.se1.ws24.exercises.uebung3.persistence.PersistenceStrategy;
+import org.hbrs.se1.ws24.solutions.uebung3.persistence.PersistenceException;
+import org.hbrs.se1.ws24.solutions.uebung3.persistence.PersistenceStrategy;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -35,7 +35,7 @@ public class Container <E extends UserStory> {
 	}
 
 	public void setPersistenceStrategyUserStroies(PersistenceStrategy<E> strategy) {
-		this.persistenceStrategy = persistenceStrategy;
+		this.persistenceStrategy = strategy;
 	}
 
 	public String deleteItems(Integer id) {

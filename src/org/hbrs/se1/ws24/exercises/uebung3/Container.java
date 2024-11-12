@@ -178,7 +178,7 @@ public class Container {
 					"Strategy not initialized");
 
 		try {
-			this.strategy.save( this.liste  );
+			this.strategy.save( this.liste);
 		} catch ( UnsupportedOperationException e) {
 			throw new PersistenceException( PersistenceException.ExceptionType.ImplementationNotAvailable
 					, "MongoDB is not implemented!" );
